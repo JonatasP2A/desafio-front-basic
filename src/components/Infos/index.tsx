@@ -1,7 +1,7 @@
 import React from 'react';
-import flamengo from '../../assets/teamShields/flamengo.svg';
-import saoPaulo from '../../assets/teamShields/sao-paulo.svg';
-import santos from '../../assets/teamShields/santos.svg';
+import flamengo from '../../assets/escudos/flamengo.svg';
+import saoPaulo from '../../assets/escudos/sao-paulo.svg';
+import santos from '../../assets/escudos/santos.svg';
 
 import { Container } from './styles';
 

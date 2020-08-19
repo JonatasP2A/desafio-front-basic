@@ -8,8 +8,8 @@
       "position": "Goleiro",
       "games": 30,
       "goals": 0,
-      "team":{
-        "name": "Flamengo", 
+      "team": {
+        "name": "Flamengo",
         "image": "flamengo.svg",
         "sigla": "FLA"
       }
@@ -22,8 +22,8 @@
       "position": "Lateral-direito",
       "games": 7,
       "goals": 0,
-      "team":{
-        "name": "Vasco", 
+      "team": {
+        "name": "Vasco",
         "image": "vasco.svg",
         "sigla": "VAS"
       }
@@ -37,8 +37,8 @@
       "position": "Zagueiro",
       "games": 75,
       "goals": 6,
-      "team":{
-        "name": "Fluminense", 
+      "team": {
+        "name": "Fluminense",
         "image": "fluminense.svg",
         "sigla": "FLU"
       }
@@ -51,8 +51,8 @@
       "position": "Zagueiro",
       "games": 51,
       "goals": 2,
-      "team":{
-        "name": "Palmeiras", 
+      "team": {
+        "name": "Palmeiras",
         "image": "palmeiras.svg",
         "sigla": "PAL"
       }
@@ -65,8 +65,8 @@
       "position": "Lateral-esquerdo",
       "games": 58,
       "goals": 6,
-      "team":{
-        "name": "São Paulo", 
+      "team": {
+        "name": "São Paulo",
         "image": "sao-paulo.svg",
         "sigla": "SPA"
       }
@@ -79,8 +79,8 @@
       "position": "Volante",
       "games": 48,
       "goals": 2,
-      "team":{
-        "name": "Goiás", 
+      "team": {
+        "name": "Goiás",
         "image": "goias.svg",
         "sigla": "GOA"
       }
@@ -93,8 +93,8 @@
       "position": "Meio-campo",
       "games": 54,
       "goals": 13,
-      "team":{
-        "name": "Cruzeiro", 
+      "team": {
+        "name": "Cruzeiro",
         "image": "cruzeiro.svg",
         "sigla": "CRU"
       }
@@ -107,8 +107,8 @@
       "position": "Meio-campo",
       "games": 40,
       "goals": 12,
-      "team":{
-        "name": "Botafogo", 
+      "team": {
+        "name": "Botafogo",
         "image": "botafogo.svg",
         "sigla": "BOT"
       }
@@ -122,8 +122,8 @@
       "position": "Atacante",
       "games": 89,
       "goals": 57,
-      "team":{
-        "name": "Santos", 
+      "team": {
+        "name": "Santos",
         "image": "santos.svg",
         "sigla": "Santos"
       }
@@ -136,8 +136,8 @@
       "position": "Atacante",
       "games": 61,
       "goals": 8,
-      "team":{
-        "name": "Sport", 
+      "team": {
+        "name": "Sport",
         "image": "sport.svg",
         "sigla": "Sport"
       }
@@ -151,8 +151,8 @@
       "position": "Atacante",
       "games": 21,
       "goals": 10,
-      "team":{
-        "name": "Flamengo", 
+      "team": {
+        "name": "Flamengo",
         "image": "flamengo.svg",
         "sigla": "FLA"
       }
@@ -165,8 +165,8 @@
       "position": "Goleiro",
       "games": 62,
       "goals": 0,
-      "team":{
-        "name": "Corinthians", 
+      "team": {
+        "name": "Corinthians",
         "image": "corinthians.svg",
         "sigla": "COR"
       }
@@ -179,8 +179,8 @@
       "position": "Ala-direito",
       "games": 28,
       "goals": 5,
-      "team":{
-        "name": "São Paulo", 
+      "team": {
+        "name": "São Paulo",
         "image": "sao-paulo.svg",
         "sigla": "SPA"
       }
@@ -193,8 +193,8 @@
       "position": "Zagueiro",
       "games": 80,
       "goals": 3,
-      "team":{
-        "name": "Internacional", 
+      "team": {
+        "name": "Internacional",
         "image": "internacional.svg",
         "sigla": "INT"
       }
@@ -208,8 +208,8 @@
       "position": "Zagueiro",
       "games": 79,
       "goals": 4,
-      "team":{
-        "name": "Grêmio", 
+      "team": {
+        "name": "Grêmio",
         "image": "gremio.svg",
         "sigla": "GRE"
       }
@@ -222,8 +222,8 @@
       "position": "Ala-esquerdo",
       "games": 29,
       "goals": 5,
-      "team":{
-        "name": "Corinthians", 
+      "team": {
+        "name": "Corinthians",
         "image": "corinthians.svg",
         "sigla": "COR"
       }
@@ -236,8 +236,8 @@
       "position": "Zagueiro",
       "games": 105,
       "goals": 9,
-      "team":{
-        "name": "Bahia", 
+      "team": {
+        "name": "Bahia",
         "image": "bahia.svg",
         "sigla": "BAH"
       }
@@ -250,8 +250,8 @@
       "position": "Volante",
       "games": 93,
       "goals": 9,
-      "team":{
-        "name": "Atlético-MG", 
+      "team": {
+        "name": "Atlético-MG",
         "image": "atletico-mg.svg",
         "sigla": "ATM"
       }
@@ -264,8 +264,8 @@
       "position": "Meio-campo",
       "games": 65,
       "goals": 14,
-      "team":{
-        "name": "Atlético-PR", 
+      "team": {
+        "name": "Atlético-PR",
         "image": "atletico-pr.svg",
         "sigla": "ATP"
       }
@@ -278,8 +278,8 @@
       "position": "Atacante",
       "games": 89,
       "goals": 24,
-      "team":{
-        "name": "Coritiba", 
+      "team": {
+        "name": "Coritiba",
         "image": "coritiba.svg",
         "sigla": "COT"
       }
@@ -293,8 +293,8 @@
       "position": "Atacante",
       "games": 73,
       "goals": 15,
-      "team":{
-        "name": "Atlético-PR", 
+      "team": {
+        "name": "Atlético-PR",
         "image": "atletico-pr.svg",
         "sigla": "ATP"
       }
@@ -308,8 +308,8 @@
       "games": 72,
       "goals": 40,
       "conversation": "6",
-      "team":{
-        "name": "Corinthians", 
+      "team": {
+        "name": "Corinthians",
         "image": "corinthians.svg",
         "sigla": "COR"
       }
