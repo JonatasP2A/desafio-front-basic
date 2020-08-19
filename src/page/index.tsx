@@ -2,7 +2,6 @@ import React, { useCallback, useState } from 'react';
 import HeaderGlobo from '../components/HeaderGlobo';
 import HeaderGloboEsporte from '../components/HeaderGloboEsporte';
 import Infos from '../components/Infos';
-import { compareAsc } from 'date-fns';
 import { FiSearch, FiChevronDown, FiChevronUp } from 'react-icons/fi';
 import { players } from '../assets/data/data.json';
 
@@ -28,12 +27,20 @@ const HomePage: React.FC = () => {
   const [orderByPlays, setOrderByPlays] = useState(false);
   const [orderByScores, setOrderByScores] = useState(false);
   const [orderByAprov, setOrderByAprov] = useState(false);
-  const [player, setPlayer] = useState(players);
 
-  const handleSearch = useCallback(() => {}, []);
+  const firstsTen = players.slice(0, 10);
+  const [player, setPlayer] = useState(firstsTen);
+
+  const handleSearch = useCallback(
+    (value: string) => {
+      const search = player.filter(player => player.name.includes(value));
+      setPlayer(search);
+    },
+    [player],
+  );
 
   const handleOrderByBirth = useCallback(() => {
-    setOrderByBirth(true);
+    setOrderByBirth(state => !state);
     setOrderByPlays(false);
     setOrderByScores(false);
     setOrderByAprov(false);
@@ -48,38 +55,42 @@ const HomePage: React.FC = () => {
       );
     });
     setPlayer(orderPlayers);
-  }, []);
+  }, [player]);
 
   const handleOrderByPlays = useCallback(() => {
     setOrderByBirth(false);
-    setOrderByPlays(true);
+    setOrderByPlays(state => !state);
     setOrderByScores(false);
     setOrderByAprov(false);
 
-    const orderPlayers = players.sort((a, b) => (a.games > b.games ? -1 : 1));
+    const orderPlayers = player.sort((a, b) => (a.games > b.games ? -1 : 1));
     setPlayer(orderPlayers);
-  }, []);
+  }, [player]);
 
   const handleOrderByScores = useCallback(() => {
     setOrderByBirth(false);
     setOrderByPlays(false);
-    setOrderByScores(true);
+    setOrderByScores(state => !state);
     setOrderByAprov(false);
 
-    const orderPlayers = players.sort((a, b) => (a.goals > b.goals ? -1 : 1));
+    const orderPlayers = player.sort((a, b) => (a.goals > b.goals ? -1 : 1));
     setPlayer(orderPlayers);
-  }, []);
+  }, [player]);
 
   const handleOrderByAprov = useCallback(() => {
     setOrderByBirth(false);
     setOrderByPlays(false);
     setOrderByScores(false);
-    setOrderByAprov(true);
+    setOrderByAprov(state => !state);
 
-    const orderPlayers = players.sort((a, b) =>
+    const orderPlayers = player.sort((a, b) =>
       a.goals / a.games > b.goals / b.games ? -1 : 1,
     );
     setPlayer(orderPlayers);
+  }, [player]);
+
+  const handleMorePlayers = useCallback(() => {
+    setPlayer(players);
   }, []);
 
   return (
@@ -139,7 +150,10 @@ const HomePage: React.FC = () => {
         <Table>
           <div className="search">
             <FiSearch />
-            <input placeholder="Buscar Atleta" onChange={handleSearch} />
+            <input
+              placeholder="Buscar Atleta"
+              onChange={e => handleSearch(String(e.target.value))}
+            />
           </div>
           <div className="nascimento">
             <button onClick={handleOrderByBirth}>
@@ -194,6 +208,8 @@ const HomePage: React.FC = () => {
             </TextScorePlayer>
           </Players>
         ))}
+
+        <button onClick={handleMorePlayers}>+ Carregar Mais Jogadores</button>
       </Container>
     </>
   );

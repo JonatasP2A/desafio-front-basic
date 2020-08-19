@@ -8,6 +8,14 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  button {
+    background: transparent;
+    border: 0;
+    text-decoration: underline;
+    color: #41a600;
+    margin-top: 48px;
+  }
 `;
 
 export const Image = styled.div`
@@ -84,6 +92,7 @@ export const Table = styled.div`
       border: 0;
       text-decoration: underline;
       color: #727272;
+      margin-top: 0;
 
       svg {
         padding-top: 5px;
@@ -109,6 +118,7 @@ export const Table = styled.div`
       border: 0;
       text-decoration: underline;
       color: #727272;
+      margin-top: 0;
 
       svg {
         padding-top: 5px;

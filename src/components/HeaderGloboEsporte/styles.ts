@@ -8,7 +8,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  div {
+  div.menus {
     display: flex;
     align-items: center;
     color: #fff;
@@ -24,6 +24,30 @@ export const Container = styled.div`
       margin-right: 8px;
       padding-left: 24px;
       border-left: 1px solid #fff;
+    }
+
+    div.teams {
+      position: absolute;
+      display: none;
+      background: #fff;
+      border-radius: 5px;
+      width: 204px;
+      top: 110px;
+      left: 120px;
+
+      img {
+        margin: 4px 8px;
+        height: 35px;
+        width: 35px;
+        padding-left: 0;
+        border-left: 0;
+      }
+    }
+  }
+
+  div.menus:hover {
+    div.teams {
+      display: initial;
     }
   }
 
